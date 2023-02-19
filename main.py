@@ -1,6 +1,6 @@
-# python3
-
+# python 3
 from collections import namedtuple
+
 
 Bracket = namedtuple("Bracket", ["char", "position"])
 
@@ -11,16 +11,17 @@ def are_matching(left, right):
 
 def find_mismatch(text):
     opening_brackets_stack = []
-    mismatch_pos = None
+
     for i, next in enumerate(text):
         # enumerate nodod gan kārtas numur, gan simbolu
         if next in "([{":
             # Process opening bracket, write your code here
             #jāpievieno struktūras
-            
+
 
             opening_brackets_stack.append(Bracket(next,i+1))
             
+
 
         if next in ")]}":
             # Process closing bracket, write your code here
@@ -31,8 +32,8 @@ def find_mismatch(text):
             opening_brackets_stack.pop()
         if opening_brackets_stack:
             return opening_brackets_stack[0].position
-        return "Success"
-            
+        return "Success"           
+        
         
 
 
@@ -43,6 +44,7 @@ def main():
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
     print(mismatch)
+
 
 
 if __name__ == "__main__":
