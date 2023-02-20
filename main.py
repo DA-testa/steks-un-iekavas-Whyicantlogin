@@ -41,12 +41,12 @@ def main():
     text = input()
     if text[0] == "I":
         text = input()
-    mismatch = find_mismatch(text)
+        mismatch = find_mismatch(text)
     # Printing answer, write your code here
-    print(mismatch)
+        print(mismatch)
 
 
 
 if __name__ == "__main__":
-    input("I")
+   #input("I")
     main()
