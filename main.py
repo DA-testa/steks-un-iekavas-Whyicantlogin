@@ -19,7 +19,7 @@ def find_mismatch(text):
             #jāpievieno struktūras
 
 
-            opening_brackets_stack.append(Bracket(next,i+1))
+            opening_brackets_stack.append(Bracket(next,i))
             
 
 
