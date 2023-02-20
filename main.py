@@ -42,8 +42,12 @@ def main():
     if text[0] == "I":
         text = input()
         mismatch = find_mismatch(text)
+        if not mismatch:
+            print("Success")
+        else:
+            print(mismatch)
     # Printing answer, write your code here
-        print(mismatch)
+        #print(mismatch)
 
 
 
